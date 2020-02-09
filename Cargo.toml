@@ -1,0 +1,18 @@
+[package]
+name = "laminar-async"
+version = "0.1.0"
+authors = ["Golem Factory <contact@golem.network>"]
+edition = "2018"
+
+[dependencies]
+laminar = { git = "https://github.com/mfranciszkiewicz/laminar", branch = "feature/dev", features = ["dev"] }
+
+crossbeam-channel = "0.3.9"
+futures = "0.3.3"
+log = "0.4.8"
+
+[dev-dependencies]
+actix-rt = "1.0.0"
+anyhow = "1.0.26"
+env_logger = "0.7.1"
+tokio = { version = "0.2.11", features = ["rt-core", "time"] }
